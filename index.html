@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (head section remains the same) ... -->
+</head>
+<body>
+    <div class="container">
+        <h1>Download Time Calculator</h1>
+        <form onsubmit="calculateDownloadTime(event)">
+            <label for="fileSize">File Size (MB):</label>
+            <input type="number" id="fileSize" placeholder="Enter file size in MB" required>
+            <label for="internetSpeed">Internet Speed (Mbps):</label>
+            <input type="number" id="internetSpeed" placeholder="Enter internet speed in Mbps" required>
+            <button type="submit">Calculate</button>
+        </form>
+        <p id="downloadTime"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
