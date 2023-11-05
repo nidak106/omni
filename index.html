@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="style.css">
     <!-- ... (head section remains the same) ... -->
 </head>
+
 <body>
-    <div class="container">
-        <h1>Download Time Calculator</h1>
-        <form onsubmit="calculateDownloadTime(event)">
-            <label for="fileSize">File Size (MB):</label>
-            <input type="number" id="fileSize" placeholder="Enter file size in MB" required>
-            <label for="internetSpeed">Internet Speed (Mbps):</label>
-            <input type="number" id="internetSpeed" placeholder="Enter internet speed in Mbps" required>
-            <button type="submit">Calculate</button>
-        </form>
-        <p id="downloadTime"></p>
-    </div>
-    <script src="script.js"></script>
+    <style>
+        body {
+            background-image: url('./html.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding: 5px;
+            width: 150px;
+            height: 200px;
+        }
+    </style>
+    <main>
+        <div class="container">
+            <form class="plz" onsubmit="calculateDownloadTime(event)">
+                <label class="cd" for="fileSize">Calculate Download Time: </label>
+                <label class="plztwo" for="fileSize">File Size (MB): </label>
+                <input class="fake" type="number" id="fileSize" placeholder="Enter file size in MB" required>
+                <label class="plztwo" for="internetSpeed">Internet Speed (Mbps): </label>
+                <input class="fake" type="number" id="internetSpeed" placeholder="internet speed in Mbps" required>
+                <button class="plzone" type="submit">Calculate</button>
+            </form>
+            <p class="faketwo" id="downloadTime"></p>
+        </div>
+        <script src="script.mjs"></script>
+    </main>
 </body>
+
 </html>
